@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+button{
+    width: 70px;
+    height: 60px;
+    margin: 3px;
+}
+
+h1{
+    font-size: 50px;
+    background-image: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 5.5s infinite;
+    background-size: 200%;
+    color: transparent;
+    font-weight: bold;
+}
+
+@keyframes animate{
+    to{
+        background-position: 200%;
+    }
+}
+
+.display{
+    width: 316px;
+    height: 50px;
+    border: solid black 2px;
+    display: flex;
+    align-self: center;
+    justify-content: end;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.container{
+    border: solid black 2px;
+    padding: 30px;
+    background-color: burlywood;
+}
+
+.value{
+    display: flex;
+    font-size: 45px;
+}
+
+#AC{
+    width: 230px;
+}
+
+.selected{
+    background-color: darkgray;
+}
